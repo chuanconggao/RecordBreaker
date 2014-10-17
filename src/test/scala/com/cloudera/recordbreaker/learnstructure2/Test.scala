@@ -244,7 +244,7 @@ class Test extends FlatSpec with BeforeAndAfter with Matchers {
   /**************************
    * End-to-end tests on large files
    *************************/
-  def testfile(fname: String): List[GenericRecord] = {
+  def testfile(fname: String): List[Option[GenericRecord]] = {
     println("Got to this point? 1")
     val filechunks = Parse.parseFileWithoutMeta(fname)
     println("Got to this point? 2")
@@ -260,7 +260,7 @@ class Test extends FlatSpec with BeforeAndAfter with Matchers {
     println("Got to this point? 3")
     val avroSchema = HigherType.getAvroSchema(inferredType)
     println("Got to this point? 4")     
-    return filechunks.map(fc => HigherType.processChunk(inferredType, fc))
+    return filechunks.map((fc:ParsedChunk) => HigherType.processChunk(inferredType, fc))
   }
   val fname1 = "angioplasty.txt"
 
