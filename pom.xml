@@ -169,7 +169,7 @@
     </dependency> 
   </dependencies>
 
-	<build>
+  <build>
     <sourceDirectory>src/main</sourceDirectory>
     <testSourceDirectory>src/test/scala</testSourceDirectory>
     <plugins>
