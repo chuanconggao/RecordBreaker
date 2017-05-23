@@ -13,8 +13,8 @@
 	<properties>
 		<avro-tools.version>1.7.6</avro-tools.version>
 		<avro.version>1.7.3</avro.version>
-		<hadoop-common.version>2.0.1-alpha</hadoop-common.version>
-		<hadoop-hdfs.version>2.0.1-alpha</hadoop-hdfs.version>
+		<hadoop-common.version>2.0.6-alpha</hadoop-common.version>
+		<hadoop-hdfs.version>2.0.6-alpha</hadoop-hdfs.version>
     
 		<hive.version>0.11.0</hive.version>
 		<jetty.version>6.1.26</jetty.version>
@@ -24,7 +24,7 @@
 		<maven-surefire-plugin.version>2.14.1</maven-surefire-plugin.version>
     <maven.compiler.source>1.5</maven.compiler.source>
     <maven.compiler.target>1.5</maven.compiler.target>
-    <scala.version>2.10.0</scala.version>
+    <scala.version>2.10.2</scala.version>
 		<northernwind-twitter-bootstrap-1.4.0.version>2</northernwind-twitter-bootstrap-1.4.0.version>
 		<opencsv.version>2.3</opencsv.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,11 +34,6 @@
 	</properties>
 
 	<repositories>
-    <repository>
-      <id>scala-tools.org</id>
-      <name>Scala-tools Maven2 Repository</name>
-      <url>https://oss.sonatype.org/content/groups/scala-tools/</url>
-    </repository>
     <repository>
       <id>mvnrepository.com</id>
       <name>MVN Repository</name>

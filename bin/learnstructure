@@ -55,7 +55,7 @@ if [ -f "${BINPATH}/schemadict-env.sh" ]; then
     source "$BINPATH/schemadict-env.sh"
 fi
 
-if [ -z "RECORDBREAKER_HOME" ]; then
+if [ -z "$RECORDBREAKER_HOME" ]; then
     export RECORDBREAKER_HOME="$CMDPATH"
 fi
 
@@ -63,9 +63,9 @@ if [ "$cygwin" == false ] ; then
   # unix and "unix-like" setup
   # pick user override, or check for dev env, or check for install
   # conf dir first in the class path in order to ensure we get flume log4j.properties
-  CLASSPATH=""
+  CLASSPATH="$(hadoop classpath)"
 
-  if [ -n "RECORDBREAKER_CLASSPATH" ]; then
+  if [ -n "$RECORDBREAKER_CLASSPATH" ]; then
       CLASSPATH+=":${RECORDBREAKER_CLASSPATH}"
   fi
 
