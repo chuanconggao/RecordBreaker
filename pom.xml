@@ -16,7 +16,7 @@
 		<hadoop-common.version>2.0.6-alpha</hadoop-common.version>
 		<hadoop-hdfs.version>2.0.6-alpha</hadoop-hdfs.version>
     
-		<hive.version>0.11.0</hive.version>
+		<hive.version>3.1.2</hive.version>
 		<jetty.version>6.1.26</jetty.version>
 		<json.version>20090211</json.version>
 		<junit.version>4.11</junit.version>
